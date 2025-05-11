@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> APP DE GATOS</title>
+  <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <h2>App de Gatos</h2>
+    <main>
+      <h3>Imagenes de gatos</h3>
+      <a href="https://www.freecodecamp.org/espanol/" target="_blank"><img src="imagenes/gatito.avif" alt="un lindo gato" rel="noopener noreferrer"></a>
+      <p>haz click aqui para ver más  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">imagnes de gatos</a></p> <!--TODO: agregar link -->
+      <hr>n  
+      <h3> Listas de gatos</h3>
+      <div>
+        <p>Cosas que los gatos <em>aman </em> :</p>
+        <img src="imagenes/lasana.jpeg" alt="">
+        <ul>
+          <li>hierva para gato</li>
+          <li>Apuntador laser</li>
+          <li>La lassana</li>
+        </ul>
+        <p>Cosas que los gatos <strong> odian</strong>:</p>
+        <ol>
+          <li>Perros</li>
+          <li>agua</li>
+          <li>serpientes</li>
+        </ol>
+        <img src="imagenes/gatitos.jpeg" alt="">
+      </div>
+      <form action="/enviar-respuesta"><!--direccion del archivo-->
+        <!--botones de radio-->
+        <label for="Interior">
+          <input id="Interior" type="radio" name="inter-exter" value="Interior">Interior</label><br>
+        <label for="Exterior">
+          <input id="Exterior" type="radio" name="inter-exter" value="Exterior">Exterior
+        </label><br>
+        <!--casillas checkbox-->
+        <label for="carinoso">
+          <input type="checkbox" id="carinoso" name="personalidad" checked value="carinoso">cariñoso  </label>
+        <label for="energico">
+          <input type="checkbox" id="energico" name="personalidad" checked value="Energico">Energico </label>
+        <label for="perezoso">
+          <input type="checkbox" id="perezoso" name="personalidad" checked value="perezoso">Perezoso <br><br></label>
+        <!--texto y boton enviar-->
+        <input type="text" placeholder="URL de la foto de tu gatito" required><br>
+        <button type = "submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p><small>sin derechos de autor</small></p>
+    </footer>
+  </body>
+</html>
